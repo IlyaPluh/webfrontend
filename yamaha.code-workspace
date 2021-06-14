@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "testflex",
+			"path": "../testflex"
+		},
+		{
+			"name": "dz1",
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "dz1"
+	}
+}
