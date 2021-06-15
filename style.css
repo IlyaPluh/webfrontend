@@ -95,10 +95,6 @@ ul {
     font: 12pt serif;
 }
 
-.p3 p {
-    font: 11pt serif;
-}
-
 .p6 {
     margin-bottom: 20px;
 }
@@ -135,4 +131,16 @@ float:left
 
 .p7 p {
     font-size: 26px;
+}
+
+.stolb {
+    list-style: none;
+    height: 1450px;
+    display: flex;
+    flex-direction: column; 
+    flex-wrap: wrap
+}
+
+.width {
+    width: 50%;
 }
