@@ -12,13 +12,10 @@
     a -= 5;
   };
 
-  let imgs = document.getElementsByClassName('img');
-  //let imgs2 = '';
+  /*let imgs = document.getElementsByClassName('img');
   for (let i = 2; i < imgs.length; i+=4){
     imgs[i].insertAdjacentHTML('afterend', imgs[i].outerHTML)
-    /*imgs2 = imgs[i].cloneNode(true)
-    imgs[i].after(imgs2);*/
-  }
+  }*/
 
   let imgs2 = document.getElementsByClassName('img2');
   for (let i = 0; i < imgs2.length; i++){
