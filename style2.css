@@ -18,6 +18,7 @@ body {
   }
   
   .grid {
+    display: flex;
     margin: 0 auto;
     padding: 0 20px;
     max-width: 980px;
@@ -43,7 +44,6 @@ body {
   nav a {
     color: #fff;
     text-decoration: none;
-    padding: .5em 1em;
   }
   
   nav li {
@@ -51,12 +51,20 @@ body {
   }
 
   .photos {
-    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     margin: 0;
-    padding: 0;
+    padding: 0px 0px 0px 5px;
+    list-style-type: none
   }
+
+.photos li {
+  padding: 0px 1px 1px 0px;
+}
 
   .feature {
       width: 200px;
       float: left;
+      padding-right: 5px;
   }
+
