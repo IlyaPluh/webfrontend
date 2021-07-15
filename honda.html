@@ -214,7 +214,60 @@
             <a class="previous" onclick="previousSlide()">&#10094;</a>
             <a class="next" onclick="nextSlide()">&#10095;</a>
         </div>
-    
+        <form action="https://motorbikes-e2a2.restdb.io/rest/preorder?key=22631469345172666884" method="post">
+            <ul>
+                <li>
+                  <label for="name">Имя:</label>
+                  <input type="text" id="name" name="name">
+                </li>
+                <li>
+                    <label for="tel">Телефон:</label>
+                    <input type="number" id="tel" name="tel">
+                </li>
+                <li>
+                    <label for="color">Базовый цвет:</label>
+                    <select id="color" name="color">
+                        <option value="Mat Axis Gray Metallic - Rebel S">Mat Axis Gray Metallic</option>
+                        <option value="Graphite Black">Graphite Black</option>
+                        <option value="Mat Jeans Blue Metallic">Mat Jeans Blue Metallic</option>
+                        <option value="Millennium Red">Millennium Red</option>
+                    </select>
+                </li>
+                <li>
+                    <label for="accent">Цвет акцентов:</label>
+                    <input type="color" id="accent" name="accent">
+                </li>
+                <li>
+                    <label for="payment">Способ оплаты:</label>
+                    <select id="payment" name="payment">
+                        <option value="full payment">Полная</option>
+                        <option value="prepayment">Предоплата</option>
+                        <option value="installment plan">Рассрочка</option>
+                    </select>
+                </li>
+                <li>
+                    <label for="delivery_date">Дата доставки:</label>
+                    <input type="date" id="delivery_date" name="delivery_date">
+                </li>
+                <li>
+                    <label for="insurance">Страховка:</label>
+                    <input type="checkbox" id="insurance" name="insurance">
+                    <label for="protective_film">Защитная пленка:</label>
+                    <input type="checkbox" id="protective_film" name="protective_film">
+                    <label for="customization_set">Кастомизация:</label>
+                    <input type="checkbox" id="customization_set" name="customization_set">
+                    <label for="extended_insurance">Расширенная гарантия:</label>
+                    <input type="checkbox" id="extended_insurance" name="extended_insurance">
+                </li>
+                <li>
+                    <label for="comment">Комментарий:</label>
+                    <textarea id="comment" name="comment"></textarea>
+                </li>
+                <li class="button">
+                    <button type="submit">Заказать</button>
+                  </li>
+            </ul>
+        </form>
     </div>
 </body>
 <script src='honda.js'></script>
