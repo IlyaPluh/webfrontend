@@ -87,3 +87,17 @@ function showSlides(n) {
     /* Делаем элемент блочным: */
     slides[slideIndex - 1].style.display = "block";    
 }
+
+formZak.onsubmit = async (e) => {
+  e.preventDefault();
+
+  let response = await fetch('https://motorbikes-e2a2.restdb.io/rest/preorder', {
+    method: 'POST',
+    headers: { 'X-API-KEY': '60e9c5256661365596af54f7'},
+    body: new FormData(formZak)
+  });
+
+  let result = await response.json();
+
+  alert(result.message);
+};

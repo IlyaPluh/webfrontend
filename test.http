@@ -1,0 +1,4 @@
+curl -i -H "Accept: application/json"\
+    -H "Content-Type: application/json"\
+    -H "x-apikey: 60e9c5256661365596af54f7"\
+    -X GET "https://motorbikes-e2a2.restdb.io/rest/preorder"

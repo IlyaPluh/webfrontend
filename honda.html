@@ -214,7 +214,7 @@
             <a class="previous" onclick="previousSlide()">&#10094;</a>
             <a class="next" onclick="nextSlide()">&#10095;</a>
         </div>
-        <form action="https://60e9c5256661365596af54f7motorbikes-e2a2.restdb.io/rest/preorder" method="post">
+        <form id="formZak">
             <ul>
                 <li>
                   <label for="name">Имя:<abbr title="required">*</abbr></label>
@@ -225,8 +225,8 @@
                     <input required type="number" placeholder="Введите номер телефона" pattern="[0-9]" id="tel" name="tel">
                 </li>
                 <li>
-                    <label for="color">Базовый цвет:<abbr title="required">*</abbr></label>
-                    <select required id="color" name="color">
+                    <label for="color">Базовый цвет:</label>
+                    <select id="color" name="color">
                         <option value="Mat Axis Gray Metallic - Rebel S">Mat Axis Gray Metallic</option>
                         <option value="Graphite Black">Graphite Black</option>
                         <option value="Mat Jeans Blue Metallic">Mat Jeans Blue Metallic</option>
