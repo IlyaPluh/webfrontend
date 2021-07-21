@@ -45,7 +45,7 @@
       let bor = e.target.parentElement.parentElement.childNodes[0]
       bor.classList.add('border')
     };
-  })
+  });
   
 /* Устанавливаем стартовый индекс слайда по умолчанию: */
 let slideIndex = 1;
@@ -86,18 +86,62 @@ function showSlides(n) {
     }
     /* Делаем элемент блочным: */
     slides[slideIndex - 1].style.display = "block";    
-}
+};
 
-formZak.onsubmit = async (e) => {
+/*formZak.onsubmit = async (e) => {
   e.preventDefault();
 
   let response = await fetch('https://motorbikes-e2a2.restdb.io/rest/preorder', {
     method: 'POST',
-    headers: { 'X-API-KEY': '60e9c5256661365596af54f7'},
-    body: new FormData(formZak)
+    headers: { 
+      'X-API-KEY': '60e9c5256661365596af54f7',
+      'Content-Type': 'application/json',
+      'Accept': 'application/json'
+    },
+    body: new FormData (formZak)
   });
 
   let result = await response.json();
 
   alert(result.message);
-};
+};*/
+
+async function postFormDataAsJson({ url, formData }) {
+  const plainFormData = Object.fromEntries(formData.entries());
+	const formDataJsonString = JSON.stringify(plainFormData);
+
+	const fetchOptions = {
+    method: "POST",
+    headers: {
+			"Content-Type": "application/json",
+			"Accept": "application/json"
+		},
+    body: formDataJsonString,
+	};
+
+	const response = await fetch(url, fetchOptions);
+
+	if (!response.ok) {
+		const errorMessage = await response.text();
+		throw new Error(errorMessage);
+	}
+
+	return response.json();
+}
+
+async function handleFormSubmit(event) {
+  event.preventDefault();
+  const form = event.currentTarget;
+  const url = form.action;
+  try {
+    const formData = new FormData(form);
+    const responseData = await postFormDataAsJson({ url, formData });
+    console.log({ responseData });
+
+	} catch (error) {
+		console.error(error);
+	}
+}
+
+const exampleForm = document.getElementById("formZak");
+exampleForm.addEventListener("submit", handleFormSubmit);
