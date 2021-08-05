@@ -1,12 +1,19 @@
-@import "abstract/constants";
+@import "normalize-scss/sass/normalize/import-now";
 
+//Abstract
+@import "abstract/constants";
+@import "abstract/mixins";
+@import "abstract/placeholders";
+
+//Base
 @import "base/base";
 @import "base/buttons";
+@import "base/logo";
 
 //Layouts
 @import "layouts/wrapper";
 @import "layouts/header";
 
-// Components
+//Components
 @import "components/contact-us";
 @import "components/promo";
