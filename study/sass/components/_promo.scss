@@ -15,3 +15,13 @@
 .promo_buttons>* {
     margin-right: 44px;
 }
+
+.promo_title {
+    margin: 0 0 30px;
+}
+
+.promo_text {
+    max-width: 487px;
+    @extend %font-add;
+    @include font(1.8rem, 2.8rem, normal, normal);
+}
