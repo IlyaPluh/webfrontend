@@ -345,7 +345,7 @@ section, main, footer, header, article {
   box-sizing: border-box;
 }
 
-.navigation_link, .logo-path {
+.navigation_link, .footer-navigation_links a, .logo-path {
   transition: all 0.3s ease-out;
 }
 
@@ -353,7 +353,7 @@ section, main, footer, header, article {
   font-family: "Open Sans", Verdana, sans-serif;
 }
 
-.promo_text, .link-button, h1 {
+.promo_text, .footer-navigation_links, .link-button, h1 {
   font-family: "Poppins", Verdana, sans-serif;
 }
 
@@ -507,6 +507,30 @@ h5 {
   height: 14px;
 }
 
+.icon-round {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon-round_white {
+  background-color: #ffffff;
+}
+
+.ico_phone {
+  background-image: url("../image/phone.svg");
+  width: 13px;
+  height: 13px;
+}
+
+.ico_letter {
+  background-image: url("../image/letter.svg");
+  width: 11px;
+  height: 8px;
+}
+
 .tags {
   display: flex;
 }
@@ -586,9 +610,41 @@ h5 {
   flex-basis: 45%;
 }
 
+.footer {
+  padding: 60px 0 70px;
+}
+
+.footer_wrapper {
+  display: flex;
+}
+
+.footer-navigation {
+  flex-grow: 1;
+  padding-left: 152px;
+}
+
+.footer-navigation_title {
+  margin: 0 0 15px;
+}
+
+.footer-navigation_links {
+  list-style: none;
+}
+.footer-navigation_links a {
+  color: #544837;
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 3.5rem;
+}
+.footer-navigation_links a:hover {
+  color: #FF9900;
+}
+
 .contact-us {
   background: #FFEEE1;
-  padding: 62px 82px;
+  padding: 62px 0;
 }
 
 .contact-us_form input, .contact-us_form textarea {
@@ -604,7 +660,7 @@ h5 {
 .contact-us_form textarea {
   resize: none;
   width: 100%;
-  height: 160px;
+  height: 140px;
 }
 
 .contact-us_line {
@@ -613,6 +669,32 @@ h5 {
 
 .contact-us_button > * {
   min-width: 117px;
+}
+
+.contact-us_title {
+  margin: 0 0 17px;
+}
+
+.contact-us_text {
+  margin: 0 0 34px;
+}
+
+.contact-us_link {
+  margin: 0 0 19px;
+  display: flex;
+  align-items: center;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 2.2rem;
+}
+.contact-us_link > a {
+  margin-left: 11px;
+  color: #544837;
+  text-decoration: none;
+}
+.contact-us_link > a:hover {
+  text-decoration: underline;
 }
 
 .promo {
@@ -714,6 +796,22 @@ h5 {
 
 .strategy_name {
   margin: 0 0 29px;
+}
+
+.about-us {
+  padding: 30px 0 100px 0;
+}
+
+.about-us_title {
+  margin: 0 0 14px;
+}
+
+.employee {
+  display: flex;
+}
+
+.about-us_description {
+  margin: 0 0 45px;
 }
 
 /*# sourceMappingURL=style.css.map */

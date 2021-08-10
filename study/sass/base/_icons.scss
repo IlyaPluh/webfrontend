@@ -53,3 +53,27 @@
     width: 18px;
     height: 14px;
 }
+
+.icon-round {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    &_white {
+        background-color: $color-light;
+    }
+}
+
+.ico_phone {
+    background-image: url("../image/phone.svg");
+    width: 13px;
+    height: 13px;
+}
+
+.ico_letter {
+    background-image: url("../image/letter.svg");
+    width: 11px;
+    height: 8px;
+}
