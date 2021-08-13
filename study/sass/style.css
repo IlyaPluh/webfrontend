@@ -446,6 +446,9 @@ h5 {
 .link-button_text {
   margin-left: 9px;
 }
+.link-button_text:hover {
+  color: #FF7549;
+}
 
 .logo-svg:hover .logo-path {
   fill: #FF9900;
@@ -557,9 +560,49 @@ h5 {
   background-color: #F5F5F5;
 }
 
+.hamburger_line, .hamburger:after, .hamburger:before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  background-color: #173A56;
+  border-radius: 5px;
+  width: 100%;
+  height: 3px;
+}
+
+.hamburger {
+  display: none;
+  position: relative;
+  width: 31px;
+  height: 25px;
+}
+@media (max-width: 768px) {
+  .hamburger {
+    display: inline-block;
+  }
+}
+.hamburger:before {
+  top: 0;
+  left: 0;
+}
+.hamburger:after {
+  bottom: 0;
+  left: 0;
+}
+
+.hamburger_line {
+  top: calc(50% - 1.5px);
+  left: 0;
+}
+
 .wrapper {
   max-width: 1197px;
   margin: auto;
+}
+@media (max-width: 1197px) {
+  .wrapper {
+    padding: 0 46px;
+  }
 }
 
 .header {
@@ -629,6 +672,7 @@ h5 {
 
 .footer-navigation_links {
   list-style: none;
+  padding: 0;
 }
 .footer-navigation_links a {
   color: #544837;
@@ -808,10 +852,51 @@ h5 {
 
 .employee {
   display: flex;
+  padding: 35px;
+  position: relative;
+  width: calc(30% - $image-gap);
 }
 
 .about-us_description {
   margin: 0 0 45px;
+}
+
+.employee_photo {
+  width: 98px;
+  height: 98px;
+  border-radius: 50%;
+  position: absolute;
+  right: -32px;
+  top: 20px;
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.employee_name {
+  margin: 0;
+}
+
+.employee_contact {
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.4rem;
+  color: #1943EF;
+  text-decoration: none;
+}
+.employee_contact:hover {
+  text-decoration: underline;
+}
+
+.employee_title {
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.4rem;
+  margin: 0;
+}
+
+.employee-container {
+  padding-right: 32px;
 }
 
 /*# sourceMappingURL=style.css.map */

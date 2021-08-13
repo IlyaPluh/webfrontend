@@ -17,6 +17,7 @@
 
 .footer-navigation_links {
     list-style: none;
+    padding: 0;
     @extend %font-add;
     a {
         color: $color-text;
