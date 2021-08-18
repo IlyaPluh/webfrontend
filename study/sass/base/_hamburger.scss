@@ -13,6 +13,7 @@
     position: relative;
     width: 31px;
     height: 25px;
+    margin-right: 37px;
     @include media-tablet {
         display: inline-block;
     }
@@ -32,4 +33,10 @@
     @extend %hamburger-line;
     top: calc(50% - 1.5px);
     left: 0;
+}
+
+.header_navigation {
+    @include media-tablet {
+        display: none;
+    }
 }

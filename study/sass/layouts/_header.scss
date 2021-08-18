@@ -8,14 +8,24 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @include media-tablet {
+        padding-left: 24px;
+    }
 }
 
-.header_buttons>.button {
-    margin-left: 14px;
+.header_buttons {
+    >.button {
+        margin-left: 14px;
+        &:first-child {
+            margin-left: 14px;
+            margin-left: 0;
+        }
+    }
+    @include media-mobile {
+        display: none;
+    }
 }
 
-.header_buttons>.button:first-child {
-    margin-left: 14px;
-    margin-left: 0;
+.header_logo-line {
+    display: flex;
 }
-
