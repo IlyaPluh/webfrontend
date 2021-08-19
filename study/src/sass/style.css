@@ -496,7 +496,7 @@ h5 {
 }
 
 .ico_play {
-  background-image: url("../image/play.svg");
+  background-image: url("/study/image/play.svg");
   width: 18px;
   height: 19px;
 }
@@ -523,25 +523,25 @@ h5 {
 }
 
 .ico_arrow {
-  background-image: url("../image/arrow.svg");
+  background-image: url("/study/image/arrow.svg");
   width: 12px;
   height: 17px;
 }
 
 .ico_snake {
-  background-image: url("../image/snake.svg");
+  background-image: url("/study/image/snake.svg");
   width: 18px;
   height: 14px;
 }
 
 .ico_heart {
-  background-image: url("../image/heart.svg");
+  background-image: url("/study/image/heart.svg");
   width: 18px;
   height: 14px;
 }
 
 .ico_clock {
-  background-image: url("../image/clock.svg");
+  background-image: url("/study/image/clock.svg");
   width: 18px;
   height: 14px;
 }
@@ -559,13 +559,13 @@ h5 {
 }
 
 .ico_phone {
-  background-image: url("../image/phone.svg");
+  background-image: url("/study/image/phone.svg");
   width: 13px;
   height: 13px;
 }
 
 .ico_letter {
-  background-image: url("../image/letter.svg");
+  background-image: url("/study/image/letter.svg");
   width: 11px;
   height: 8px;
 }
@@ -962,7 +962,7 @@ h5 {
 
 .tools_wrapper {
   padding-bottom: 90px;
-  background-image: url("../image/tools-bg.svg");
+  background-image: url("/study/image/tools-bg.svg");
   background-position: center bottom;
   background-size: 100%;
   background-repeat: no-repeat;
@@ -1091,7 +1091,7 @@ h5 {
   display: flex;
   padding: 35px;
   position: relative;
-  width: calc(30% - $image-gap);
+  /*width: calc(30% - $image-gap);*/
 }
 
 .about-us_description {

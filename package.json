@@ -2,9 +2,9 @@
   "name": "webfrontend",
   "version": "1.0.0",
   "description": "",
-  "main": "cat.js",
+  "main": "index.js",
   "scripts": {
-    "style": "sass --watch study/sass/style.scss study/sass/style.css",
+    "style": "sass --watch study/src/sass/style.scss study/src/sass/style.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
