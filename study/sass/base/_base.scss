@@ -17,6 +17,9 @@ h1 {
 
 h2 {
     @include font(3.4rem, 4.6rem, bold, normal);
+    @include media-mobile {
+        @include font(2.4rem, 3.3rem, bold, normal);
+    }
 }
 
 h3 {

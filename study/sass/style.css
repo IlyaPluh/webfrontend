@@ -389,6 +389,14 @@ h2 {
   font-weight: bold;
   line-height: 4.6rem;
 }
+@media (max-width: 414px) {
+  h2 {
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 3.3rem;
+  }
+}
 
 h3 {
   font-size: 2.4rem;
@@ -709,14 +717,35 @@ h5 {
 .footer {
   padding: 60px 0 70px;
 }
+@media (max-width: 414px) {
+  .footer {
+    padding: 30px 0;
+  }
+}
 
 .footer_wrapper {
   display: flex;
+}
+@media (max-width: 768px) {
+  .footer_wrapper {
+    flex-direction: column;
+  }
 }
 
 .footer-navigation {
   flex-grow: 1;
   padding-left: 152px;
+}
+@media (max-width: 768px) {
+  .footer-navigation {
+    padding-left: 0;
+    margin-top: 34px;
+  }
+}
+@media (max-width: 414px) {
+  .footer-navigation {
+    flex-direction: column;
+  }
 }
 
 .footer-navigation_title {
@@ -743,6 +772,17 @@ h5 {
   background: #FFEEE1;
   padding: 62px 0;
 }
+@media (max-width: 768px) {
+  .contact-us {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-us-container {
+    flex-direction: column;
+  }
+}
 
 .contact-us_form input, .contact-us_form textarea {
   border: 1px solid #ffffff;
@@ -763,13 +803,37 @@ h5 {
 .contact-us_line {
   margin-bottom: 19px;
 }
+@media (max-width: 414px) {
+  .contact-us_line {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+  .contact-us_line > * {
+    margin-bottom: 19px;
+  }
+}
 
 .contact-us_button > * {
   min-width: 117px;
 }
+@media (max-width: 414px) {
+  .contact-us_button {
+    margin-top: 24px;
+  }
+}
 
 .contact-us_title {
   margin: 0 0 17px;
+}
+
+.contact-us_content {
+  max-width: 520px;
+}
+@media (max-width: 768px) {
+  .contact-us_content {
+    max-width: 100%;
+    margin-bottom: 40px;
+  }
 }
 
 .contact-us_text {
@@ -784,6 +848,11 @@ h5 {
   font-style: normal;
   font-weight: normal;
   line-height: 2.2rem;
+}
+@media (max-width: 768px) {
+  .contact-us_link {
+    justify-content: center;
+  }
 }
 .contact-us_link > a {
   margin-left: 11px;
@@ -917,6 +986,32 @@ h5 {
 .tools_button {
   margin-top: 60px;
   text-align: center;
+}
+@media (max-width: 414px) {
+  .tools_button {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .tool-container {
+    flex-wrap: wrap;
+  }
+  .tool-container > .tool {
+    flex-basis: 42%;
+  }
+}
+@media (max-width: 414px) {
+  .tool-container > .tool {
+    flex-basis: 100%;
+    margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .tool {
+    text-align: center;
+  }
 }
 
 .strategies {

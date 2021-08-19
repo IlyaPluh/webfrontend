@@ -24,4 +24,28 @@
 .tools_button {
     margin-top: 60px;
     text-align: center;
+    @include media-mobile {
+        margin-top: 0;
+    }
+}
+
+.tool-container {
+    @include media-tablet {
+        flex-wrap: wrap;
+        >.tool {
+            flex-basis: 42%;
+        }
+    }
+    @include media-mobile {
+        >.tool {
+            flex-basis: 100%;
+            margin-bottom: 25px;
+        }
+    }
+}
+
+.tool {
+    @include media-tablet {
+        text-align: center;
+    }
 }
