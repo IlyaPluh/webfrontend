@@ -1,3 +1,4 @@
+import {Article} from './js/Article'
 const data = [
     {
         id: 1,
