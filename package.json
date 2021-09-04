@@ -20,6 +20,10 @@
   "dependencies": {
     "bootstrap": "^5.1.0",
     "normalize-scss": "^7.0.1",
-    "normalize.css": "^8.0.1"
+    "normalize.css": "^8.0.1",
+    "webpack": "^5.52.0"
+  },
+  "devDependencies": {
+    "webpack-cli": "^4.8.0"
   }
 }

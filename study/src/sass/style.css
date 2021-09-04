@@ -580,6 +580,7 @@ h5 {
 .tag {
   border-radius: 90px;
   padding: 0 14px;
+  cursor: pointer;
   font-size: 1.3rem;
   font-style: normal;
   font-weight: normal;
@@ -1060,6 +1061,9 @@ h5 {
   flex-direction: column;
   position: relative;
 }
+.strategy_hidden {
+  display: none;
+}
 @media (max-width: 768px) {
   .strategy {
     overflow: hidden;
@@ -1091,7 +1095,7 @@ h5 {
   display: flex;
   padding: 35px;
   position: relative;
-  /*width: calc(30% - $image-gap);*/
+  width: calc(30% - $image-gap);
 }
 
 .about-us_description {
