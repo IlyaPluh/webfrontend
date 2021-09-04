@@ -27,6 +27,12 @@ const data = [
 ];
 
 window.onload = function() {
+    
+    //Render Articles
+    if (data) {
+        renderArticlesToDom();
+    }
+    
     //Tags
     addTagsClickHandler();
 }
@@ -77,4 +83,25 @@ const filterStrategyBySelectedTag = (selectedTag) => {
             }
         })
     })
+}
+
+const renderArticlesToDom = () => {
+    let strategiesWrapper = getStrategiesWrapper();
+    generateArticles(data).forEach(article => {
+        strategiesWrapper.append(article.generateArticle())
+    });
+}
+
+const getStrategiesWrapper = () => {
+    const strategiesConstainer = document.querySelector('.strategy-wrapper');
+    strategiesConstainer.innerHTML = '';
+    return strategiesConstainer;       
+}
+
+const generateArticles = (data) => {
+    let articles = [];
+    data.forEach(article => {
+        articles.push(new Article(article))
+    });
+    return articles;
 }
