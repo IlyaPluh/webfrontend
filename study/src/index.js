@@ -4,9 +4,9 @@ const data = [
         id: 1,
         title: 'Increasing Prosperity With Positive Thinking',
         urlToImage: './image/image1.jpg',
-        tags: ['Art', 'Design'],
+        tags: ['Art', 'Design'], 
         content: 'Knowing yourself is the first, and a very critical step in the process of planing your future',
-        data: '01.01.2021'
+        data: '01.01.2021' 
     },
     {
         id: 2,
@@ -21,6 +21,22 @@ const data = [
         title: 'Success Steps For Your Personal Or Business Life',
         urlToImage: './image/image3.jpg',
         tags: ['Culture', 'Design', 'Art'],
+        content: 'Knowing yourself is the first, and a very critical step in the process of planing your future',
+        data: '01.01.2021'
+    },
+    {
+        id: 4,
+        title: 'Success Steps For Your Personal Or Business Life Plus Funny Image on the Back',
+        urlToImage: './image/image4.jpg',
+        tags: ['Culture', 'Design', 'Art'],
+        content: 'Knowing yourself is the first, and a very critical step in the process of planing your future',
+        data: '01.01.2021'
+    },
+    {
+        id: 5,
+        title: 'Increasing Prosperity With Positive Thinking',
+        urlToImage: './image/image5.jpg',
+        tags: ['Design'],
         content: 'Knowing yourself is the first, and a very critical step in the process of planing your future',
         data: '01.01.2021'
     }
