@@ -5,7 +5,7 @@ export class Article {
         this.urlToImage = urlToImage;
         this.tags = tags;
     }
-
+  
     //Article generator
     generateArticle() {
         let template = '';

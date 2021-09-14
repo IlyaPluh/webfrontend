@@ -1,4 +1,6 @@
-import {Article} from './js/Article'
+import {Article} from './js/Article';
+import {Modal} from './js/Modal';
+ 
 const data = [
     {
         id: 1,
@@ -51,6 +53,9 @@ window.onload = function() {
     
     //Tags
     addTagsClickHandler();
+
+    //Generate Base Modal from Modal Class
+    addToolsClickHandler();
 }
 
 const addTagsClickHandler = () => {
@@ -120,4 +125,19 @@ const generateArticles = (data) => {
         articles.push(new Article(article))
     });
     return articles;
+}
+
+const addToolsClickHandler = () => {
+    document.querySelector('.tools_button .button').addEventListener('click', () => {
+        generateToolsModal();
+    });
+}
+
+const generateToolsModal = () => {
+    renderModalWindow('Test');
+}
+
+const renderModalWindow = (content) => {
+    let modal = new Modal ('tools-modal');
+    modal.buildModal(content);
 }
