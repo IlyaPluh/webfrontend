@@ -660,6 +660,7 @@ h5 {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all 1s;
 }
 
 .modal {
@@ -670,6 +671,7 @@ h5 {
   min-height: 120px;
   max-height: 90%;
   overflow: auto;
+  transition: all 1s;
 }
 @media (max-width: 768px) {
   .modal {
@@ -682,6 +684,7 @@ h5 {
   top: 30px;
   right: 26px;
   cursor: pointer;
+  transition: all 1s;
 }
 .modal_close-icon svg {
   pointer-events: none;
