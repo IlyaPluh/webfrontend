@@ -1134,9 +1134,28 @@ h5 {
 }
 
 .strategy_name {
-  margin: 0 0 29px;
-  text-align: left;
-  flex-grow: 1;
+  margin-bottom: 10px;
+}
+
+.strategy_text {
+  margin: 0 0 12px;
+}
+
+.strategy_data {
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.3rem;
+  margin: 0 0 5px;
+}
+
+.article-modal_content .strategy_image {
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .article-modal_content .strategy_image {
+    position: static;
+  }
 }
 
 .about-us {
