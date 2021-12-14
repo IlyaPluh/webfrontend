@@ -1,5 +1,4 @@
 /******/ (() => { // webpackBootstrap
-/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
 /***/ "./src/js/Article.js":
@@ -8,6 +7,7 @@
   \***************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "Article": () => (/* binding */ Article)
@@ -82,6 +82,7 @@ var Article = /*#__PURE__*/function () {
   \********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "ArticleModal": () => (/* binding */ ArticleModal)
@@ -191,6 +192,7 @@ var ArticleModal = /*#__PURE__*/function (_Modal) {
   \*************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "Modal": () => (/* binding */ Modal)
@@ -288,6 +290,16 @@ var Modal = /*#__PURE__*/function () {
   return Modal;
 }();
 
+/***/ }),
+
+/***/ "./src/sass/style.css":
+/*!****************************!*\
+  !*** ./src/sass/style.css ***!
+  \****************************/
+/***/ (() => {
+
+throw new Error("Module parse failed: Unexpected token (8:5)\nYou may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders\n|  * 2. Prevent adjustments of font size after orientation changes in iOS.\n|  */\n> html {\n|   line-height: 1.15;\n|   /* 1 */");
+
 /***/ })
 
 /******/ 	});
@@ -317,6 +329,18 @@ var Modal = /*#__PURE__*/function () {
 /******/ 	}
 /******/ 	
 /************************************************************************/
+/******/ 	/* webpack/runtime/compat get default export */
+/******/ 	(() => {
+/******/ 		// getDefaultExport function for compatibility with non-harmony modules
+/******/ 		__webpack_require__.n = (module) => {
+/******/ 			var getter = module && module.__esModule ?
+/******/ 				() => (module['default']) :
+/******/ 				() => (module);
+/******/ 			__webpack_require__.d(getter, { a: getter });
+/******/ 			return getter;
+/******/ 		};
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/define property getters */
 /******/ 	(() => {
 /******/ 		// define getter functions for harmony exports
@@ -347,8 +371,9 @@ var Modal = /*#__PURE__*/function () {
 /******/ 	
 /************************************************************************/
 var __webpack_exports__ = {};
-// This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
+// This entry need to be wrapped in an IIFE because it need to be in strict mode.
 (() => {
+"use strict";
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
@@ -356,6 +381,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _js_Article__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./js/Article */ "./src/js/Article.js");
 /* harmony import */ var _js_Modal__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./js/Modal */ "./src/js/Modal.js");
 /* harmony import */ var _js_ArticleModal__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./js/ArticleModal */ "./src/js/ArticleModal.js");
+/* harmony import */ var _sass_style_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./sass/style.css */ "./src/sass/style.css");
+/* harmony import */ var _sass_style_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_sass_style_css__WEBPACK_IMPORTED_MODULE_3__);
+
 
 
 
